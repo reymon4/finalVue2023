@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <h1>Programación Web</h1>
+  <NavBar />
+  <router-view />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import  NavBar from "@/components/NavBar.vue";
+
+import GenerarTokenPageVue from './pages/GenerarTokenPage.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    GenerarTokenPageVue,
+    NavBar
+  },
+};
 </script>
 
 <style>
@@ -22,5 +28,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #C9D7F8;
+
+
 }
 </style>
